@@ -7,7 +7,6 @@ public class DamageSource : MonoBehaviour
 
     protected void CauseDamage(Collider2D _other)
     {
-        //if ((_layerMask.value & (1 << _other.gameObject.layer)) != 0)
         if (CanDamage(_other.gameObject))
         {
             if (_other.TryGetComponent(out HealthBehaviour _health))

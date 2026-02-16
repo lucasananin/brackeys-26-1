@@ -5,8 +5,8 @@ public class HealthBehaviour : MonoBehaviour
 {
     [SerializeField] protected bool _isInvincible = false;
     [SerializeField] protected int _maxHealth = 100;
-    [SerializeField] protected UnityEvent<HealthBehaviour> OnHurt_Event = null;
-    [SerializeField] protected UnityEvent<HealthBehaviour> OnDead_Event = null;
+    [SerializeField] protected UnityEvent<HealthBehaviour> _onHurt = null;
+    [SerializeField] protected UnityEvent<HealthBehaviour> _onDead = null;
     //[SerializeField] protected int _defaultMaxHealth = 100;
 
     [Header("// READONLY")]
@@ -57,13 +57,13 @@ public class HealthBehaviour : MonoBehaviour
     {
         _currentHealth = 0;
         OnDead?.Invoke();
-        OnDead_Event?.Invoke(this);
+        _onDead?.Invoke(this);
     }
 
     protected virtual void OnDamageTaken_()
     {
         OnHurt?.Invoke();
-        OnHurt_Event?.Invoke(this);
+        _onHurt?.Invoke(this);
     }
 
     public bool IsAlive()

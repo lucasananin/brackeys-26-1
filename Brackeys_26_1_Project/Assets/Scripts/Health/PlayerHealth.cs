@@ -1,15 +1,14 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerHealth : HealthBehaviour
 {
     [Header("// PLAYER")]
-    [SerializeField] float _timeRate = 1f;
-    [SerializeField] int _decreaseRate = 1;
+    //[SerializeField] float _timeRate = 1f;
+    //[SerializeField] int _decreaseRate = 1;
     [SerializeField] UnityEvent _onPlayerDead = null;
 
-    private float _timer = 0f;
+    //private float _timer = 0f;
 
     public static event UnityAction OnPlayerHurt = null;
     public static event UnityAction OnPlayerDead = null;
@@ -19,16 +18,16 @@ public class PlayerHealth : HealthBehaviour
         RestoreAllHealth();
     }
 
-    private void LateUpdate()
-    {
-        _timer += Time.deltaTime;
+    //private void LateUpdate()
+    //{
+    //    _timer += Time.deltaTime;
 
-        if (_timer > _timeRate)
-        {
-            _timer = 0;
-            TakeDamage(_decreaseRate);
-        }
-    }
+    //    if (_timer > _timeRate)
+    //    {
+    //        _timer = 0;
+    //        TakeDamage(_decreaseRate);
+    //    }
+    //}
 
     protected override void OnDamageTaken_()
     {
