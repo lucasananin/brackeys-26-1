@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7819317396020511505, guid: 5e015d6780437f04bb705bf69a2bf5d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.5
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7819317396020511505, guid: 5e015d6780437f04bb705bf69a2bf5d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 82ba05b2f3f06b3469c88683d0851e69, type: 2}
+  _knockbackForce: 5
 --- !u!114 &1416894692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +693,7 @@ MonoBehaviour:
   _onDead:
     m_PersistentCalls:
       m_Calls: []
+  _lastDamageSource: {fileID: 0}
   _currentHealth: 0
   _onPlayerDead:
     m_PersistentCalls:

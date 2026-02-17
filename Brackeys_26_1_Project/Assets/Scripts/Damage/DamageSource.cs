@@ -11,7 +11,7 @@ public class DamageSource : MonoBehaviour
         {
             if (_other.TryGetComponent(out HealthBehaviour _health))
             {
-                _health.TakeDamage(_damage);
+                _health.TakeDamage(gameObject, _damage);
             }
         }
     }

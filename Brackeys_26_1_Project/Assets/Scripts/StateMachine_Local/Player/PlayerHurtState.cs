@@ -4,12 +4,14 @@ public class PlayerHurtState : IState
 {
     private PlayerStateController _controller = null;
     private PlayerController _mover = null;
+    private HealthBehaviour _health = null;
     private float _timer = 0;
 
     public void Awake(StateController _controller)
     {
         this._controller = _controller as PlayerStateController;
         _mover = _controller.GetComponent<PlayerController>();
+        _health = _controller.GetComponent<HealthBehaviour>();
     }
 
     public string GetStateName()
@@ -19,8 +21,8 @@ public class PlayerHurtState : IState
 
     public void OnEnter()
     {
-        // set frame velocity to the opposite of damage source.
-        _mover.Knockback(-1f);
+        float _xDirection = _health.LastDamageSource.transform.position.x > _controller.transform.position.x ? -1f : 1f;
+        _mover.Knockback(_xDirection);
     }
 
     public void OnExit()

@@ -22,7 +22,7 @@ public class DamageOnStay : DamageSource
 
             for (int i = 0; i < _count; i++)
             {
-                _victims[i].TakeDamage(_damage);
+                _victims[i].TakeDamage(gameObject, _damage);
             }
         }
     }

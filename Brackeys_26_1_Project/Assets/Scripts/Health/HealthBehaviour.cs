@@ -10,7 +10,10 @@ public class HealthBehaviour : MonoBehaviour
     //[SerializeField] protected int _defaultMaxHealth = 100;
 
     [Header("// READONLY")]
+    [SerializeField] protected GameObject _lastDamageSource = null;
     [SerializeField] protected int _currentHealth = 0;
+
+    public GameObject LastDamageSource { get => _lastDamageSource; }
 
     public event UnityAction OnHurt = null;
     public event UnityAction OnDead = null;
@@ -21,10 +24,11 @@ public class HealthBehaviour : MonoBehaviour
         RestoreAllHealth();
     }
 
-    public void TakeDamage(int _value)
+    public void TakeDamage(GameObject _source, int _value)
     {
         if (!IsAlive()) return;
 
+        _lastDamageSource = _source;
         _currentHealth -= _value;
 
         if (_isInvincible)
