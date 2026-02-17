@@ -30,7 +30,7 @@ public class PlayerHurtState : IState
 
     public void OnExit()
     {
-        // enable iFrames.
+        _health.EnableIFrames();
     }
 
     public void OnUpdate()

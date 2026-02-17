@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -5,6 +6,7 @@ public class HealthBehaviour : MonoBehaviour
 {
     [SerializeField] protected bool _isInvincible = false;
     [SerializeField] protected int _maxHealth = 100;
+    [SerializeField] protected float _iFrameDuration = 2f;
     [SerializeField] protected UnityEvent<HealthBehaviour> _onHurt = null;
     [SerializeField] protected UnityEvent<HealthBehaviour> _onDead = null;
     //[SerializeField] protected int _defaultMaxHealth = 100;
@@ -27,12 +29,13 @@ public class HealthBehaviour : MonoBehaviour
     public void TakeDamage(GameObject _source, int _value)
     {
         if (!IsAlive()) return;
+        if (_isInvincible) return;
 
         _lastDamageSource = _source;
         _currentHealth -= _value;
 
-        if (_isInvincible)
-            RestoreAllHealth();
+        //if (_isInvincible)
+        //    RestoreAllHealth();
 
         if (_currentHealth <= 0)
         {
@@ -78,6 +81,19 @@ public class HealthBehaviour : MonoBehaviour
     public virtual float GetNormalizedValue()
     {
         return _currentHealth / (_maxHealth * 1f);
+    }
+
+    internal void EnableIFrames()
+    {
+        _isInvincible = true;
+        StopAllCoroutines();
+        StartCoroutine(IFrames_Routine());
+    }
+
+    private IEnumerator IFrames_Routine()
+    {
+        yield return new WaitForSeconds(_iFrameDuration);
+        _isInvincible = false;
     }
 
     // UPGRADES
