@@ -32,6 +32,7 @@ public class PlayerHealth : HealthBehaviour
     protected override void OnDamageTaken_()
     {
         base.OnDamageTaken_();
+        RestoreAllHealth();
         OnPlayerHurt?.Invoke();
     }
 

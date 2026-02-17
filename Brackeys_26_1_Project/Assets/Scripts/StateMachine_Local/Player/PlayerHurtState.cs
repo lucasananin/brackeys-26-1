@@ -25,7 +25,7 @@ public class PlayerHurtState : IState
     {
         float _xDirection = _health.LastDamageSource.transform.position.x > _controller.transform.position.x ? -1f : 1f;
         _mover.Knockback(_xDirection);
-        _flipper.Flip(_xDirection == -1f ? true : false);
+        _flipper.Flip(_xDirection == -1f);
     }
 
     public void OnExit()
