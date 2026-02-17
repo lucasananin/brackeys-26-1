@@ -350,3 +350,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PackageBehaviour
   _collider: {fileID: 4001824729380581579}
+  _playerTags: {fileID: 11400000, guid: c53f3f2c6f924ab41b0c4c72b8956863, type: 2}

@@ -23,4 +23,9 @@ public class PackageHolder : MonoBehaviour
         _instance.AddForce(new(_x, _y), ForceMode2D.Impulse);
         _instance.AddTorque(_torque * _xDirection, ForceMode2D.Impulse);
     }
+
+    internal void IncreaseAmount()
+    {
+        _amount++;
+    }
 }
