@@ -40,14 +40,16 @@ namespace TarodevController
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
 
-        private void Update()
+        //private void Update()
+        //{
+        //    _time += Time.deltaTime;
+        //    GatherInput();
+        //}
+
+        public void GatherInput()
         {
             _time += Time.deltaTime;
-            GatherInput();
-        }
 
-        private void GatherInput()
-        {
             _frameInput = new FrameInput
             {
                 JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
@@ -68,23 +70,23 @@ namespace TarodevController
             }
         }
 
-        private void FixedUpdate()
-        {
-            CheckCollisions();
+        //private void FixedUpdate()
+        //{
+        //    CheckCollisions();
 
-            HandleJump();
-            HandleDirection();
-            HandleGravity();
+        //    HandleJump();
+        //    HandleDirection();
+        //    HandleGravity();
 
-            ApplyMovement();
-        }
+        //    ApplyMovement();
+        //}
 
         #region Collisions
 
         private float _frameLeftGrounded = float.MinValue;
         private bool _grounded;
 
-        private void CheckCollisions()
+        public void CheckCollisions()
         {
             Physics2D.queriesStartInColliders = false;
 
@@ -130,7 +132,7 @@ namespace TarodevController
         private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
         private bool CanUseCoyote => _coyoteUsable && !_grounded && _time < _frameLeftGrounded + _stats.CoyoteTime;
 
-        private void HandleJump()
+        public void HandleJump()
         {
             if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0) _endedJumpEarly = true;
 
@@ -141,7 +143,7 @@ namespace TarodevController
             _jumpToConsume = false;
         }
 
-        private void ExecuteJump()
+        public void ExecuteJump()
         {
             _endedJumpEarly = false;
             _timeJumpWasPressed = 0;
@@ -153,9 +155,6 @@ namespace TarodevController
             _frameVelocity.y = _jumpVelocity;
             //_frameVelocity.y = _stats.JumpPower;
 
-            var _torqueDirection = _frameVelocity.x >= 0 ? -1 : 1;
-            _rb.AddTorque(_stats.jumpTorque * _torqueDirection, ForceMode2D.Impulse);
-
             Jumped?.Invoke();
         }
 
@@ -163,7 +162,7 @@ namespace TarodevController
 
         #region Horizontal
 
-        private void HandleDirection()
+        public void HandleDirection()
         {
             if (_frameInput.Move.x == 0)
             {
@@ -181,7 +180,7 @@ namespace TarodevController
 
         #region Gravity
 
-        private void HandleGravity()
+        public void HandleGravity()
         {
             if (_grounded && _frameVelocity.y <= 0f)
             {
@@ -203,16 +202,27 @@ namespace TarodevController
 
         #endregion
 
-        private void ApplyMovement() => _rb.linearVelocity = _frameVelocity;
+        public void ApplyMovement() => _rb.linearVelocity = _frameVelocity;
 
         public bool IsMoving()
         {
             return _rb.linearVelocity.x != 0;
         }
 
-        public void SetSpeedBuff(float _value)
+        [Header("// Knockback")]
+        [SerializeField] float _knockbackForce = 5f;
+
+        public void Knockback(float _xDirection)
         {
-            _speedBuff = _value;
+            _frameInput = default;
+            _rb.linearVelocity = Vector2.zero;
+            _frameVelocity.x = _knockbackForce * _xDirection;
+            ExecuteJump();
+        }
+
+        public bool IsGrounded()
+        {
+            return _grounded;
         }
 
 #if UNITY_EDITOR
