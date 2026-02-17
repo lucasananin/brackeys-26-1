@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: dfec70e1f924fcf4f9f245f25894ea2e
+guid: 1779c9bf54ef2924fbca189248f8b2a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7601490876557054235
-    second: Purple_Portal8_0
+      213: -7281170594837355705
+    second: WarehouseInterior_0
+  - first:
+      213: -5477563019398966879
+    second: WarehouseInterior_1
+  - first:
+      213: -8980604881704333091
+    second: WarehouseInterior_2
+  - first:
+      213: 2407403694649430821
+    second: WarehouseInterior_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Purple_Portal8_0
+      name: Shelves
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 47
+        y: 20
+        width: 51
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b115e848dabed7960800000000000000
-      internalID: 7601490876557054235
+      spriteID: 1a198e98479cbf3b0800000000000000
+      internalID: -5477563019398966879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WarpPortal
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 20
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0dfddf07b7e5380800000000000000
+      internalID: -8980604881704333091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 20
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523da82c7e0d86120800000000000000
+      internalID: 2407403694649430821
       vertices: []
       indices: 
       edges: []
@@ -138,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 40c35d49f4231f54a9dec71100df291c
+    spriteID: 9fb524120738f214eb7b1fe6249ff1da
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +201,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Purple_Portal8_0: 7601490876557054235
+      Computer: 2407403694649430821
+      Shelves: -5477563019398966879
+      WarehouseInterior_0: -7281170594837355705
+      WarpPortal: -8980604881704333091
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
