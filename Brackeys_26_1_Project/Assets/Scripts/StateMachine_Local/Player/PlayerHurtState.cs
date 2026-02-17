@@ -5,6 +5,7 @@ public class PlayerHurtState : IState
     private PlayerStateController _controller = null;
     private PlayerController _mover = null;
     private HealthBehaviour _health = null;
+    private SideFlipper _flipper = null;
     private float _timer = 0;
 
     public void Awake(StateController _controller)
@@ -12,6 +13,7 @@ public class PlayerHurtState : IState
         this._controller = _controller as PlayerStateController;
         _mover = _controller.GetComponent<PlayerController>();
         _health = _controller.GetComponent<HealthBehaviour>();
+        _flipper = _controller.GetComponent<SideFlipper>();
     }
 
     public string GetStateName()
@@ -23,6 +25,7 @@ public class PlayerHurtState : IState
     {
         float _xDirection = _health.LastDamageSource.transform.position.x > _controller.transform.position.x ? -1f : 1f;
         _mover.Knockback(_xDirection);
+        _flipper.Flip(_xDirection == -1f ? true : false);
     }
 
     public void OnExit()
