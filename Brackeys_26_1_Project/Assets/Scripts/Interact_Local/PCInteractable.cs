@@ -5,7 +5,8 @@ public class PCInteractable : InteractableBehaviour
     public override void Interact(InteractAgent _agent)
     {
         base.Interact(_agent);
-        //Debug.Log($"PC Interacted with");
+        var _view = FindAnyObjectByType<PCView>();
+        _view.Show();
     }
 
     public override string GetText()

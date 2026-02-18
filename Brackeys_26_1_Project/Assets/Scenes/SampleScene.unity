@@ -790,6 +790,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51925ca44395c4946bf3a9ade53712bd, type: 3}
+--- !u!1 &1295467906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295467908}
+  - component: {fileID: 1295467907}
+  m_Layer: 0
+  m_Name: LevelHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1295467907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295467906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326f51ec76102314597f75c2453c342e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelHandler
+  _levelList:
+  - _displayName: Desert
+    _description: Bring some sunglasses.
+    _sceneName: WarehouseScene
+    _icon: {fileID: 0}
+  - _displayName: Forest
+    _description: Beware the mosquitoes!
+    _sceneName: 
+    _icon: {fileID: 0}
+--- !u!4 &1295467908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295467906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428619137
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,17 +892,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1471700428 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6659541063196043497, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
-  m_PrefabInstance: {fileID: 8804783163271124888}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f671bfdc9b3f5a74d929a73213044052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CanvasView
 --- !u!1 &1614132895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,34 +2101,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1471700428}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InstantShow
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CanvasView, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200926371225553735, guid: 3e7d7a97d15bb9042b8a1cd6cc93069e, type: 3}
-      propertyPath: _onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2318,6 +2332,7 @@ SceneRoots:
   - {fileID: 9221873}
   - {fileID: 1715096687}
   - {fileID: 3611887590002257865}
+  - {fileID: 1295467908}
   - {fileID: 445380273}
   - {fileID: 2059539677}
   - {fileID: 260393302}

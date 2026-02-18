@@ -113,6 +113,7 @@ MonoBehaviour:
   _sceneLoader: {fileID: 2089251389874459245}
   _so: {fileID: 11400000, guid: 97e9389fbae405244a275da489c1769a, type: 2}
   _collider: {fileID: 6061668818301744385}
+  _renderer: {fileID: 6065989459841009348}
 --- !u!114 &2089251389874459245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4438474988006144664}
   m_Layer: 7
-  m_Name: Renders
+  m_Name: Renderers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

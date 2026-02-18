@@ -65,7 +65,7 @@ public class CanvasView : MonoBehaviour
         //    OnModalHide?.Invoke(this);
     }
 
-    public void InstantShow()
+    public virtual void InstantShow()
     {
         _timer = 1;
         _targetAlpha = 1;
@@ -77,7 +77,7 @@ public class CanvasView : MonoBehaviour
         //    OnModalShow?.Invoke(this);
     }
 
-    public void InstantHide()
+    public virtual void InstantHide()
     {
         _timer = 0;
         _targetAlpha = 0;
