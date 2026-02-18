@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class PackageDisplay : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameDataSO _so = null;
+    [SerializeField] CanvasGroup _canvasGroup = null;
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        
+        _canvasGroup.alpha = _so.PackageAmount > 0 ? 1 : 0.1f;
     }
 }

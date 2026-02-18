@@ -11,6 +11,7 @@ public class Mailbox : InteractableBehaviour
 
         var _packageHolder = _agent.GetComponent<PackageHolder>();
         if (!_packageHolder.HasPackage()) return;
+        _packageHolder.DecreaseAmount();
         // decrease amount.
 
         _so.SetWarehouseScene();

@@ -11,6 +11,7 @@ public class GameDataSO : ScriptableObject
     [SerializeField] int _packageAmount = 0;
 
     public string SceneToPortal { get => _SceneToPortal; set => _SceneToPortal = value; }
+    public int PackageAmount { get => _packageAmount; set => _packageAmount = value; }
 
     internal void SetWarehouseScene()
     {

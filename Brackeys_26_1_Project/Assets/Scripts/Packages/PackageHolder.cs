@@ -4,7 +4,7 @@ public class PackageHolder : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _prefab = null;
     [SerializeField] Transform _point = null;
-    [SerializeField] int _amount = 1;
+    [SerializeField] GameDataSO _gameSo = null;
     [Space]
     [SerializeField] Vector2 _xForce = new(3f, 5f);
     [SerializeField] Vector2 _yForce = new(3f, 5f);
@@ -12,9 +12,9 @@ public class PackageHolder : MonoBehaviour
 
     public void Drop(HealthBehaviour _health)
     {
-        if (_amount <= 0) return;
+        if (_gameSo.PackageAmount <= 0) return;
 
-        _amount--;
+        _gameSo.PackageAmount--;
         var _instance = Instantiate(_prefab, _point.position, Quaternion.identity);
 
         float _xDirection = _health.LastDamageSource.transform.position.x > _point.position.x ? -1f : 1f;
@@ -26,11 +26,16 @@ public class PackageHolder : MonoBehaviour
 
     internal void IncreaseAmount()
     {
-        _amount++;
+        _gameSo.PackageAmount++;
+    }
+
+    internal void DecreaseAmount()
+    {
+        _gameSo.PackageAmount--;
     }
 
     internal bool HasPackage()
     {
-        return _amount > 0;
+        return _gameSo.PackageAmount > 0;
     }
 }

@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PackageHolder
   _prefab: {fileID: 5114174677763873822, guid: 6f9946a698c387c4fa1e6781bd941347, type: 3}
   _point: {fileID: 1597291076757882587}
-  _amount: 1
+  _gameSo: {fileID: 11400000, guid: 97e9389fbae405244a275da489c1769a, type: 2}
   _xForce: {x: 5, y: 7}
   _yForce: {x: 5, y: 7}
   _torque: 1
