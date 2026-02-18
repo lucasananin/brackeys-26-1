@@ -8,10 +8,10 @@ public class PortalInteractable : InteractableBehaviour
     [SerializeField] Collider2D _collider = null;
     [SerializeField] GameObject _renderer = null;
 
-    private void Start()
-    {
-        _renderer.SetActive(false);
-    }
+    //private void Start()
+    //{
+    //    _renderer.SetActive(false);
+    //}
 
     public override void Interact(InteractAgent _agent)
     {

@@ -28,4 +28,9 @@ public class PackageHolder : MonoBehaviour
     {
         _amount++;
     }
+
+    internal bool HasPackage()
+    {
+        return _amount > 0;
+    }
 }
