@@ -20,7 +20,7 @@ public class PlayerInteractPanel : MonoBehaviour
 
     private void UpdateVisuals(InteractableBehaviour _interactableBehaviour)
     {
-        if (_interactableBehaviour is null)
+        if (_interactableBehaviour == null)
         {
             _view.Hide();
         }

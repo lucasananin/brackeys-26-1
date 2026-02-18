@@ -24,4 +24,10 @@ public class SceneLoader : MonoBehaviour
     {
         OnLoadScene?.Invoke(_sceneToLoad, _sceneToUnload);
     }
+
+    public void SetValues(string _sceneToLoad, string _sceneToUnload)
+    {
+        this._sceneToLoad = _sceneToLoad;
+        this._sceneToUnload = _sceneToUnload;
+    }
 }
