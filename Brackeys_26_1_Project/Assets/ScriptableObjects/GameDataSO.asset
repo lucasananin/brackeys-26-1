@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GameDataSO
   m_EditorClassIdentifier: Assembly-CSharp::GameDataSO
   _warehouseSceneName: SampleScene
-  _SceneToPortal: WarehouseScene
+  _SceneToPortal: 0
   _packageAmount: 0

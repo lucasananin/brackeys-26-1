@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 3196839548746865804}
   - component: {fileID: 7457981459626230157}
   - component: {fileID: 2493610431085260440}
+  - component: {fileID: 5145189924247820527}
+  - component: {fileID: 7505259831259588206}
   - component: {fileID: 3955665029158316963}
   - component: {fileID: 5833306525426900755}
   m_Layer: 6
@@ -114,7 +116,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.9}
   m_EdgeRadius: 0
 --- !u!210 &3593044416669533928
 SortingGroup:
@@ -233,10 +235,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PackageHolder
   _prefab: {fileID: 5114174677763873822, guid: 6f9946a698c387c4fa1e6781bd941347, type: 3}
   _point: {fileID: 1597291076757882587}
-  _amount: 1
+  _gameSo: {fileID: 11400000, guid: 97e9389fbae405244a275da489c1769a, type: 2}
   _xForce: {x: 5, y: 7}
   _yForce: {x: 5, y: 7}
   _torque: 1
+--- !u!114 &5145189924247820527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440017634131429440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465450c090a900348b9894721cb7bb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputHandler
+--- !u!114 &7505259831259588206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440017634131429440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d04ca145b658d40a9db63a04dab0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractAgent
+  _filter:
+    useTriggers: 1
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 128
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  _radius: 1
+  _currentInteractable: {fileID: 0}
 --- !u!212 &3955665029158316963
 SpriteRenderer:
   serializedVersion: 2
@@ -424,7 +466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2355534178782150824
 Transform:
   m_ObjectHideFlags: 0
