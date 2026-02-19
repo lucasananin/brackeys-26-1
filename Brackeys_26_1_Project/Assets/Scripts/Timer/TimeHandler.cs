@@ -7,10 +7,10 @@ public class TimeHandler : MonoBehaviour
     [Header("// RUNTIME")]
     [SerializeField] bool _isOn = false;
 
-    private void Start()
-    {
-        Init();
-    }
+    //private void Start()
+    //{
+    //    Init();
+    //}
 
     private void Update()
     {
@@ -34,5 +34,6 @@ public class TimeHandler : MonoBehaviour
     public void End()
     {
         _isOn = false;
+        _so.ResetTime();
     }
 }

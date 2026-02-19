@@ -47,6 +47,9 @@ public class PCView : CanvasView
         _portal.Init();
         var _shelve = FindAnyObjectByType<Shelve>();
         _shelve.SpawnPackage();
+        var _timerHandler = FindAnyObjectByType<TimeHandler>();
+        _timerHandler.Init();
+
         Hide();
     }
 }
