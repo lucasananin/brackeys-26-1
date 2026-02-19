@@ -1,3 +1,4 @@
+using TarodevController;
 using UnityEngine;
 
 public class PlayerStateController : StateController
@@ -6,6 +7,23 @@ public class PlayerStateController : StateController
     {
         base.Start();
         ChangeToDefaultState();
+    }
+
+    private void OnEnable()
+    {
+        TimeHandler.OnTimerEnd += DisableCharacter;
+    }
+
+    private void OnDisable()
+    {
+        TimeHandler.OnTimerEnd -= DisableCharacter;
+    }
+
+    private void DisableCharacter()
+    {
+        enabled = false;
+        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        GetComponent<PlayerInteractAgent>().enabled = false;
     }
 
     public void ChangeToHurtState()

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TimeHandler : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class TimeHandler : MonoBehaviour
 
     [Header("// RUNTIME")]
     [SerializeField] bool _isOn = false;
+
+    public static event UnityAction OnTimerEnd = null;
 
     //private void Start()
     //{
@@ -21,6 +24,7 @@ public class TimeHandler : MonoBehaviour
             if (_so.Timer <= 0)
             {
                 End();
+                OnTimerEnd?.Invoke();
             }
         }
     }

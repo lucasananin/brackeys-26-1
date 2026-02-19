@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c269af931ebc15040bfbf7eb5e773a5a, type: 3}
   m_Name: TimerSO
   m_EditorClassIdentifier: Assembly-CSharp::TimerSO
-  _maxTimeInMinutes: 5
-  _timer: 0
+  _maxTimeInMinutes: 0.2
+  _timer: 12
