@@ -7,7 +7,8 @@ public class PlayerStateController : StateController
         base.Start();
         ChangeToDefaultState();
     }
-
+    
+    
     public void ChangeToHurtState()
     {
         _machine.ChangeState(new PlayerHurtState(), this);

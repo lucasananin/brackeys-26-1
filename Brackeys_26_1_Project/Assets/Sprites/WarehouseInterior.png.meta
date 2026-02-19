@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 1779c9bf54ef2924fbca189248f8b2a4
+guid: 07e743908bd0b0f4fb13c682f7fb7ece
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7281170594837355705
-    second: WarehouseInterior_0
+      213: -3012641019469864990
+    second: WarehouseInteriorImproved_0
   - first:
-      213: -5477563019398966879
-    second: WarehouseInterior_1
+      213: -772602998747142390
+    second: WarehouseInteriorImproved_1
   - first:
-      213: -8980604881704333091
-    second: WarehouseInterior_2
+      213: 3725375902326358710
+    second: WarehouseInteriorImproved_2
   - first:
-      213: 2407403694649430821
-    second: WarehouseInterior_3
+      213: -1978042471378203544
+    second: WarehouseInteriorImproved_3
+  - first:
+      213: 6715939151972425499
+    second: WarehouseInteriorImproved_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +125,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shelves
+      name: WarehouseInteriorImproved_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef5ab654f2f036d0800000000000000
+      internalID: -3012641019469864990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WarehouseInteriorImproved_1
       rect:
         serializedVersion: 2
         x: 47
@@ -137,36 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a198e98479cbf3b0800000000000000
-      internalID: -5477563019398966879
+      spriteID: a0766438aa92745f0800000000000000
+      internalID: -772602998747142390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WarpPortal
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 20
-        width: 28
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd0dfddf07b7e5380800000000000000
-      internalID: -8980604881704333091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Computer
+      name: WarehouseInteriorImproved_2
       rect:
         serializedVersion: 2
         x: 104
@@ -181,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 523da82c7e0d86120800000000000000
-      internalID: 2407403694649430821
+      spriteID: 6b286f035a133b330800000000000000
+      internalID: 3725375902326358710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Box
+      name: WarehouseInteriorImproved_3
       rect:
         serializedVersion: 2
         x: 132
@@ -196,15 +199,37 @@ TextureImporter:
         width: 18
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a4fb5be24fc53964099a26682bc72094
-      internalID: -1238361884
+      spriteID: 86ccdd63ad49c84e0800000000000000
+      internalID: -1978042471378203544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WarehouseInteriorImproved_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 20
+        width: 28
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f547e731fc33d50800000000000000
+      internalID: 6715939151972425499
       vertices: []
       indices: 
       edges: []
@@ -213,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9fb524120738f214eb7b1fe6249ff1da
+    spriteID: 035a88166e586ec49b051d64d3d5fd58
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Box: -7281170594837355705
-      Computer: 2407403694649430821
-      Shelves: -5477563019398966879
-      WarpPortal: -8980604881704333091
+      WarehouseInteriorImproved_0: -3012641019469864990
+      WarehouseInteriorImproved_1: -772602998747142390
+      WarehouseInteriorImproved_2: 3725375902326358710
+      WarehouseInteriorImproved_3: -1978042471378203544
+      WarehouseInteriorImproved_4: 6715939151972425499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

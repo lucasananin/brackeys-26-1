@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 9062420795998651392}
   - component: {fileID: 89458116702317010}
   m_Layer: 0
-  m_Name: Warehouse Tile Palette
+  m_Name: Warehouse Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,7 +623,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &2386154666337212037
+--- !u!114 &492478141953656751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
