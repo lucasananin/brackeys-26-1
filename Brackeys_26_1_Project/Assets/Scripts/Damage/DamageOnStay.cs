@@ -32,8 +32,6 @@ public class DamageOnStay : DamageSource
         if (CanDamage(_other.gameObject) && _other.TryGetComponent(out HealthBehaviour _health))
         {
             _victims.Add(_health);
-
-            _other.GetComponentInChildren<ParticleSystem>().Play();
         }
     }
 
@@ -42,8 +40,6 @@ public class DamageOnStay : DamageSource
         if (CanDamage(_other.gameObject) && _other.TryGetComponent(out HealthBehaviour _health))
         {
             _victims.Remove(_health);
-
-            _other.GetComponentInChildren<ParticleSystem>().Stop();
         }
     }
 }
