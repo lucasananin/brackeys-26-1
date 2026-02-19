@@ -49,6 +49,8 @@ public class PCView : CanvasView
         _shelve.SpawnPackage();
         var _timerHandler = FindAnyObjectByType<TimeHandler>();
         _timerHandler.Init();
+        var _goalPanel = FindAnyObjectByType<GoalPanel>();
+        _goalPanel.Display($"Portal Opened!");
 
         Hide();
     }
