@@ -45,6 +45,8 @@ public class PCView : CanvasView
     {
         var _portal = FindAnyObjectByType<PortalInteractable>();
         _portal.Init();
+        var _shelve = FindAnyObjectByType<Shelve>();
+        _shelve.SpawnPackage();
         Hide();
     }
 }
