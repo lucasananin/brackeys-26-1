@@ -1,25 +1,28 @@
 using System;
+using TarodevController;
 using UnityEngine;
 
 public class AnimationStateController : MonoBehaviour
 {
-    public Animator characterAnimator;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Animator characterAnimator = null;
+    private PlayerController _controller = null;
+
     void Start()
     {
-        characterAnimator =  GetComponent<Animator>();
+        characterAnimator = GetComponent<Animator>();
+        _controller = GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float speed = Input.GetAxis("Horizontal");
-
+        float speed = Input.GetAxisRaw("Horizontal");
         characterAnimator.SetFloat("Speed", Math.Abs(speed));
-        if (Input.GetButtonDown("Jump"))
-        {
-            characterAnimator.SetBool("isJumping", true);
-        }
+        characterAnimator.SetBool("isJumping", !_controller.IsGrounded());
+
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    characterAnimator.SetBool("isJumping", true);
+        //}
     }
 
     public void OnLanding()

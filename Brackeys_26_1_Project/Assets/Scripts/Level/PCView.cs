@@ -8,7 +8,10 @@ public class PCView : CanvasView
     [SerializeField] GameDataSO _so = null;
     [SerializeField] Button _startButton = null;
     [SerializeField] Button _closeButton = null;
-    [SerializeField] TextMeshProUGUI _nameText = null;
+    [Space]
+    [SerializeField] TextMeshProUGUI _title = null;
+    [SerializeField] TextMeshProUGUI _description = null;
+    [SerializeField] Image _icon = null;
 
     private void OnEnable()
     {
@@ -37,7 +40,9 @@ public class PCView : CanvasView
     public void UpdateVisuals()
     {
         var _data = FindAnyObjectByType<LevelHandler>().GetData();
-        _nameText.text = $"{_data.DisplayName}";
+        _title.text = $"{_data.DisplayName}";
+        _description.text = $"{_data.Description}";
+        _icon.sprite = _data.Icon;
         _so.SceneToPortal = _data.SceneName;
     }
 

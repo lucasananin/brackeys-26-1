@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +122,13 @@ TextureImporter:
       name: sandtiles_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 187
-        width: 66
-        height: 37
+        x: 32
+        y: 188
+        width: 64
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 36, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: sandtiles_1
       rect:
         serializedVersion: 2
-        x: 127
-        y: 159
-        width: 226
-        height: 65
+        x: 256
+        y: 160
+        width: 96
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,11 +167,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 576
-        height: 161
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,11 +184,187 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sandtiles_3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 63
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e852ea541568ab4b99963869c7c918a
+      internalID: 906474347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f095476b7feb911479021472e3ae8047
+      internalID: -893994839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 97
+        width: 129
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df8fba35d070e44ab7be86fe4b63f56
+      internalID: 10662911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095805541d871ca4db24a8e1b0bf01a0
+      internalID: -397028869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 63
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd60738a8c137ed4c9fe0e8ef45dafbf
+      internalID: -776681276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3b2fb010637fb40aeb0cf64f7ae8c2
+      internalID: 414553932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc6c9bf6f6b1b04d8496dcdc8d98d49
+      internalID: 1399062955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandtiles_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 215
+        width: 128
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42678ae5e2c07d24387e30caac555b38
+      internalID: -228271305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8b643d9bb5ea1a2489a0189de18c9e54
     internalID: 0
     vertices: []
     indices: 
@@ -200,7 +376,15 @@ TextureImporter:
     nameFileIdTable:
       sandtiles_0: -2628444993156708228
       sandtiles_1: -7364080467385330452
+      sandtiles_10: 1399062955
       sandtiles_2: -4869676535605130677
+      sandtiles_3: 906474347
+      sandtiles_4: -893994839
+      sandtiles_5: 10662911
+      sandtiles_6: -397028869
+      sandtiles_7: -776681276
+      sandtiles_8: 414553932
+      sandtiles_9: -228271305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

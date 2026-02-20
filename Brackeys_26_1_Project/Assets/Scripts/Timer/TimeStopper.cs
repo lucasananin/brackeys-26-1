@@ -3,6 +3,7 @@ using UnityEngine;
 public class TimeStopper : MonoBehaviour
 {
     [SerializeField] PortalInteractable _portal = null;
+    [SerializeField] GameDataSO _so = null;
 
     private void OnEnable()
     {
@@ -18,5 +19,6 @@ public class TimeStopper : MonoBehaviour
     {
         var _timeHandler = FindAnyObjectByType<TimeHandler>();
         _timeHandler.End();
+        _so.LevelIndex++;
     }
 }

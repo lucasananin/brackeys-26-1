@@ -131,8 +131,8 @@ TextureImporter:
       name: tree_set_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 160
+        x: 112
+        y: 64
         width: 48
         height: 16
       alignment: 0
@@ -153,10 +153,10 @@ TextureImporter:
       name: tree_set_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 100
-        height: 145
+        x: 0
+        y: 32
+        width: 98
+        height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,8 @@ TextureImporter:
       name: tree_set_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 128
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -197,8 +197,8 @@ TextureImporter:
       name: tree_set_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 144
+        y: 128
         width: 16
         height: 48
       alignment: 0
@@ -219,8 +219,8 @@ TextureImporter:
       name: tree_set_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 144
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -241,10 +241,10 @@ TextureImporter:
       name: tree_set_5
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 0
-        width: 65
-        height: 65
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
