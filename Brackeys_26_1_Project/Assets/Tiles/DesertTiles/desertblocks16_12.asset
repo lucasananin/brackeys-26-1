@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ForestTile
+  m_Name: desertblocks16_12
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -4414011573179383448, guid: 3fd962f765e89864b87271d8f998b802, type: 3}
+  m_Sprite: {fileID: 1234692201, guid: f1fb7aa87bb4b5f468afe1ed30fc886d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
