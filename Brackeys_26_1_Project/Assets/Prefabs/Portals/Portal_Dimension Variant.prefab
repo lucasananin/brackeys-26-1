@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeStopper
   _portal: {fileID: 4944869017553492833}
+  _so: {fileID: 11400000, guid: 97e9389fbae405244a275da489c1769a, type: 2}
 --- !u!114 &4944869017553492833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1599671710500492491, guid: 83f9f3a8edbe8db419871b11fa7e3fee, type: 3}
