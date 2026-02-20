@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1718751922305879508}
   m_Layer: 0
   m_Name: Sandfall
-  m_TagString: Untagged
+  m_TagString: Sandfall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
