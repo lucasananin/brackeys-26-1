@@ -940,60 +940,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51925ca44395c4946bf3a9ade53712bd, type: 3}
---- !u!1 &1295467906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1295467908}
-  - component: {fileID: 1295467907}
-  m_Layer: 0
-  m_Name: LevelHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1295467907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295467906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 326f51ec76102314597f75c2453c342e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelHandler
-  _levelList:
-  - _displayName: Desert
-    _description: Bring some sunglasses.
-    _sceneName: MissionTest
-    _icon: {fileID: 0}
-  - _displayName: Forest
-    _description: Beware the mosquitoes!
-    _sceneName: 
-    _icon: {fileID: 0}
-  _so: {fileID: 11400000, guid: 97e9389fbae405244a275da489c1769a, type: 2}
---- !u!4 &1295467908
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295467906}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428619137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,6 +2375,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83f9f3a8edbe8db419871b11fa7e3fee, type: 3}
+--- !u!1001 &5602429930548022548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594031521323326698, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6632013642324878036, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
+      propertyPath: m_Name
+      value: LevelHandler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 500119f6ba4aaf44f97bea97f3db4b4c, type: 3}
 --- !u!1001 &8804783163271124888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2561,7 +2564,7 @@ SceneRoots:
   - {fileID: 9221873}
   - {fileID: 1715096687}
   - {fileID: 3611887590002257865}
-  - {fileID: 1295467908}
+  - {fileID: 5602429930548022548}
   - {fileID: 445380273}
   - {fileID: 2059539677}
   - {fileID: 260393302}
