@@ -134,7 +134,7 @@ TextureImporter:
         x: 0
         y: 64
         width: 128
-        height: 96
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,13 +172,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: treeredux_2
+      name: treeredux_
       rect:
         serializedVersion: 2
-        x: 152
-        y: 64
-        width: 104
-        height: 65
+        x: 184
+        y: 94
+        width: 40
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +268,7 @@ TextureImporter:
         width: 98
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,6 +277,50 @@ TextureImporter:
       bones: []
       spriteID: 56de7be063e9d32458c062407409ffdc
       internalID: 1077788305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeredux_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 64
+        width: 104
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c556ee2f9dd20a143a440f45365254b6
+      internalID: 1587540425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeredux_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 94
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea19ce37ae9428946b786caf91dd971a
+      internalID: 182598251
       vertices: []
       indices: 
       edges: []
@@ -295,13 +339,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      treeredux_: -1370260664753487998
       treeredux_0: -2545950443428536260
       treeredux_1: 3111944359811888381
-      treeredux_2: -1370260664753487998
+      treeredux_2: 182598251
       treeredux_3: -2130334960243401337
       treeredux_4: -2741148600822333404
       treeredux_5: -6960913764474482274
       treeredux_6: 1077788305
+      treeredux_7: 1587540425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
