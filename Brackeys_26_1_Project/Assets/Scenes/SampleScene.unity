@@ -978,6 +978,7 @@ MonoBehaviour:
     _description: Beware the mosquitoes!
     _sceneName: 
     _icon: {fileID: 0}
+  _so: {fileID: 11400000, guid: 97e9389fbae405244a275da489c1769a, type: 2}
 --- !u!4 &1295467908
 Transform:
   m_ObjectHideFlags: 0
@@ -1131,7 +1132,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1614132895
 GameObject:
@@ -2289,6 +2290,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Interact
       objectReference: {fileID: 0}
+    - target: {fileID: 8413540290725497781, guid: 4909e72fd4767014eb1a70daaa4b1de8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8413540290725497781, guid: 4909e72fd4767014eb1a70daaa4b1de8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2508,10 +2517,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4866335215836551697, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4866335215836551697, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8704965506074928521, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
       propertyPath: m_Name
       value: Canvas_Warehouse
       objectReference: {fileID: 0}
+    - target: {fileID: 8758676299513634404, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
+      propertyPath: m_fontSize
+      value: 48.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758676299513634404, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8758676299513634404, guid: 5aeb6a67c43f2774393061d51b97d603, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

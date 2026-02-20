@@ -12,11 +12,13 @@ public class PlayerStateController : StateController
     private void OnEnable()
     {
         TimeHandler.OnTimerEnd += DisableCharacter;
+        LevelHandler.OnAllLevelsFinished += DisableCharacter;
     }
 
     private void OnDisable()
     {
         TimeHandler.OnTimerEnd -= DisableCharacter;
+        LevelHandler.OnAllLevelsFinished -= DisableCharacter;
     }
 
     private void DisableCharacter()

@@ -1,15 +1,32 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LevelHandler : MonoBehaviour
 {
     [SerializeField] List<LevelData> _levelList = null;
+    [SerializeField] GameDataSO _so = null;
+
+    public static event UnityAction OnAllLevelsFinished = null;
+
+    private void Start()
+    {
+        if (_so.LevelIndex >= _levelList.Count)
+        {
+            // show victory panel.
+            _so.LevelIndex = 0;
+            OnAllLevelsFinished?.Invoke();
+        }
+    }
 
     internal LevelData GetData()
     {
-        var _index = 0;
-        return _levelList[_index];
+        var _index = _so.LevelIndex;
+
+        if (_index < _levelList.Count)
+            return _levelList[_index];
+        else
+            return _levelList[^1];
     }
 }
 
