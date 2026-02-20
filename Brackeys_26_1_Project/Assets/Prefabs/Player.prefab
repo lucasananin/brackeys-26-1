@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isInvincible: 0
   _maxHealth: 10
-  _iFrameDuration: 2
+  _iFrameDuration: 0.5
   _onHurt:
     m_PersistentCalls:
       m_Calls:
