@@ -173,15 +173,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass-tiles_0
+      name: Mushroom2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 64
+        x: 224
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,15 +195,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_1
+      name: brush3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
-        width: 64
-        height: 64
+        x: 192
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,160 +212,6 @@ TextureImporter:
       bones: []
       spriteID: 0e96e72d4f8f8ad20800000000000000
       internalID: 3290153258181356000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_6
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e17b4bbd7acc78890800000000000000
-      internalID: -7455765636770908386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45517944a6127daa0800000000000000
-      internalID: -6136399226968009388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_8
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a4329e0e703a3db0800000000000000
-      internalID: -4811479933923478359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_12
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2eabf771c6135baa0800000000000000
-      internalID: -6145951776156697886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_13
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b11cb607d0e8a3520800000000000000
-      internalID: 2682612716424380699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_14
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afb0819b4b7ba5190800000000000000
-      internalID: -7972858203478684678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_15
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93014935699c75b40800000000000000
-      internalID: 5429029523302912057
       vertices: []
       indices: 
       edges: []
@@ -564,72 +410,6 @@ TextureImporter:
       bones: []
       spriteID: 5ac9d344f5d47e04dbd028d30dee5246
       internalID: -1516470257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_33
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a0f3f497f00f444d8f71054511fa80a
-      internalID: 886820936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9a7c45c61b5b53459ad1f55293855a8
-      internalID: -1563358889786639635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f4db4539d3cae5488e9375dc1ee2db4
-      internalID: 3290153258181356000
       vertices: []
       indices: 
       edges: []
@@ -899,28 +679,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_24
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67ac9506c84fce04e864eed3de5623f8
-      internalID: -1158377831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: grass-tiles_25
       rect:
         serializedVersion: 2
@@ -1075,28 +833,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_32
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b75756f3f0949443a8b28ea4f3656f3
-      internalID: -302506520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: grass-tiles_33
       rect:
         serializedVersion: 2
@@ -1207,94 +943,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_40
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2bb396410f6c92499e74d3b0fb2ba9d
-      internalID: 1170569786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_41
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 817f52fb1b5f2dc4d8b417e0f932f695
-      internalID: -160029433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_42
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70590fbe79e1bbd44bdaf7ce99b8479f
-      internalID: 8686545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_43
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45a64f8bbce288443ad0fcadfca748e6
-      internalID: -754383825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: grass-tiles_44
       rect:
         serializedVersion: 2
@@ -1361,7 +1009,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_47
+      name: Grass1
       rect:
         serializedVersion: 2
         x: 0
@@ -1383,7 +1031,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_48
+      name: Grass2
       rect:
         serializedVersion: 2
         x: 32
@@ -1405,7 +1053,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_49
+      name: Grass3
       rect:
         serializedVersion: 2
         x: 64
@@ -1427,29 +1075,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_50
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b091fb56137348c44b05684ecf94d220
-      internalID: -1169124714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tiles_51
+      name: Block
       rect:
         serializedVersion: 2
         x: 128
@@ -1537,7 +1163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_55
+      name: Soil1
       rect:
         serializedVersion: 2
         x: 0
@@ -1559,7 +1185,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_56
+      name: Soil2
       rect:
         serializedVersion: 2
         x: 32
@@ -1581,7 +1207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_57
+      name: Soil3
       rect:
         serializedVersion: 2
         x: 64
@@ -1603,7 +1229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_58
+      name: Soil4
       rect:
         serializedVersion: 2
         x: 96
@@ -1735,11 +1361,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-tiles_63
+      name: brush2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 160
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1750,8 +1376,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca31f49e3d71efb40b7726c8f208c116
-      internalID: -415630120
+      spriteID: 4d124046e4b6b2a42a01b7552905d168
+      internalID: 2318374901652368831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brush1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038572cb7166f8e488778f0e5ef12609
+      internalID: -9164605656112945125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ae4299a0691eb4586f7afa1f3cf2f0
+      internalID: -7455765636770908386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree Chunk
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fedc53c1558244798381bee1807260
+      internalID: 2132870952
       vertices: []
       indices: 
       edges: []
@@ -1772,8 +1464,20 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      grass-tiles_0: -1563358889786639635
-      grass-tiles_1: 3290153258181356000
+      Block: -476673276
+      Grass1: -199919367
+      Grass2: -667768533
+      Grass3: 605681069
+      Mushroom1: -7455765636770908386
+      Mushroom2: -1563358889786639635
+      Soil1: -27570734
+      Soil2: -756567946
+      Soil3: -1728410105
+      Soil4: -1815640376
+      Tree Chunk: 2132870952
+      brush1: -9164605656112945125
+      brush2: 2318374901652368831
+      brush3: 3290153258181356000
       grass-tiles_10: -3397229076242489743
       grass-tiles_11: -4120542419930868984
       grass-tiles_12: -6145951776156697886
@@ -1806,7 +1510,6 @@ TextureImporter:
       grass-tiles_37: 2004538120
       grass-tiles_38: 528049392
       grass-tiles_39: -575354898
-      grass-tiles_4: 2318374901652368831
       grass-tiles_40: 1170569786
       grass-tiles_41: -160029433
       grass-tiles_42: 8686545
@@ -1814,21 +1517,11 @@ TextureImporter:
       grass-tiles_44: -1096015535
       grass-tiles_45: -42348057
       grass-tiles_46: -1922681749
-      grass-tiles_47: -199919367
-      grass-tiles_48: -667768533
-      grass-tiles_49: 605681069
-      grass-tiles_5: -9164605656112945125
       grass-tiles_50: -1169124714
-      grass-tiles_51: -476673276
       grass-tiles_52: -1446179211
       grass-tiles_53: -42774839
       grass-tiles_54: -1815682727
-      grass-tiles_55: -27570734
-      grass-tiles_56: -756567946
-      grass-tiles_57: -1728410105
-      grass-tiles_58: -1815640376
       grass-tiles_59: -932974583
-      grass-tiles_6: -7455765636770908386
       grass-tiles_60: 1732147443
       grass-tiles_61: 1679233742
       grass-tiles_62: -1485675468
