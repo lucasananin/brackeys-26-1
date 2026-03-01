@@ -6,6 +6,7 @@ public class RandomTileFiller : MonoBehaviour
 {
     public Tilemap tilemap;
     public Tilemap layerBG;
+    public List<TileBase> layerBGTiles;
     public List<TilesData> tilesDataList;
     public List<TilesData> tilesDataList2;
     public List<TilesData> tilesDataList3;
@@ -50,13 +51,13 @@ public class RandomTileFiller : MonoBehaviour
         }
         var allLayers = new List<List<TilesData>> { tilesDataList, tilesDataList2, tilesDataList3 };
 
-        // Filter out null or empty layers
-        var activeLayers = new List<List<TilesData>>();
-        foreach (var l in allLayers)
-            if (l != null && l.Count > 0)
-                activeLayers.Add(l);
+        // Build list of active layer indices (so we can map back to original layer index)
+        var activeIndices = new List<int>();
+        for (int i = 0; i < allLayers.Count; i++)
+            if (allLayers[i] != null && allLayers[i].Count > 0)
+                activeIndices.Add(i);
 
-        if (activeLayers.Count == 0 || width <= 0 || height <= 0)
+        if (activeIndices.Count == 0 || width <= 0 || height <= 0)
             return;
 
         // For each tile, pick a layer using Perlin noise so layers can be tilted and appear in multiple patches.
@@ -71,24 +72,28 @@ public class RandomTileFiller : MonoBehaviour
                 float nx = (startPosition.x + x + seed * 13f) / Mathf.Max(0.0001f, noiseScale);
                 float ny = (startPosition.y + y + seed * 17f) / Mathf.Max(0.0001f, noiseScale);
                 float nval = Mathf.PerlinNoise(nx, ny);
-                int layerIndex = Mathf.FloorToInt(nval * activeLayers.Count);
+                int layerIndex = Mathf.FloorToInt(nval * activeIndices.Count);
                 if (layerIndex < 0) layerIndex = 0;
-                if (layerIndex >= activeLayers.Count) layerIndex = activeLayers.Count - 1;
+                if (layerIndex >= activeIndices.Count) layerIndex = activeIndices.Count - 1;
 
                 // occasional patch override
                 if (patchChance > 0 && Random.Range(0, 100) < patchChance)
                 {
-                    layerIndex = Random.Range(0, activeLayers.Count);
+                    layerIndex = Random.Range(0, activeIndices.Count);
                 }
 
-                var list = activeLayers[layerIndex];
+                int realIndex = activeIndices[layerIndex];
+                var list = allLayers[realIndex];
+
+                // place the layer's background tile regardless of foreground emptiness
+                TileBase bgTile = (layerBGTiles != null && realIndex < layerBGTiles.Count) ? layerBGTiles[realIndex] : null;
+                if (layerBG != null)
+                    layerBG.SetTile(pos, bgTile);
 
                 int roll = Random.Range(1, 101);
                 if (roll <= emptyChance)
                 {
                     tilemap.SetTile(pos, null);
-                    if (layerBG != null)
-                        layerBG.SetTile(pos, null);
                     continue;
                 }
 
@@ -96,14 +101,10 @@ public class RandomTileFiller : MonoBehaviour
                 if (chosen == null)
                 {
                     tilemap.SetTile(pos, null);
-                    if (layerBG != null)
-                        layerBG.SetTile(pos, null);
                     continue;
                 }
 
                 tilemap.SetTile(pos, chosen.Tile);
-                if (layerBG != null)
-                    layerBG.SetTile(pos, chosen.TilemapBG);
             }
         }
     }
@@ -129,7 +130,10 @@ public class RandomTileFiller : MonoBehaviour
                 TilesData chosen = GetRandomTileByWeight(tilesDataList);
                 tilemap.SetTile(pos, chosen != null ? chosen.Tile : null);
                 if (layerBG != null)
-                    layerBG.SetTile(pos, chosen != null ? chosen.TilemapBG : null);
+                {
+                    TileBase bgTile = (layerBGTiles != null && 0 < layerBGTiles.Count) ? layerBGTiles[0] : null;
+                    layerBG.SetTile(pos, bgTile);
+                }
             }
         }
     }
@@ -155,7 +159,10 @@ public class RandomTileFiller : MonoBehaviour
                 TilesData chosen = GetRandomTileByWeight(tilesDataList2);
                 tilemap.SetTile(pos, chosen != null ? chosen.Tile : null);
                 if (layerBG != null)
-                    layerBG.SetTile(pos, chosen != null ? chosen.TilemapBG : null);
+                {
+                    TileBase bgTile = (layerBGTiles != null && 1 < layerBGTiles.Count) ? layerBGTiles[1] : null;
+                    layerBG.SetTile(pos, bgTile);
+                }
             }
         }
     }
@@ -196,7 +203,6 @@ public class RandomTileFiller : MonoBehaviour
 public class TilesData
 {
     public TileBase Tile;
-    public TileBase TilemapBG;
     [Range(1, 100)]
     public int SpawnChance;
 }
